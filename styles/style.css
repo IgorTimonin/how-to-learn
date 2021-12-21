@@ -35,7 +35,7 @@ cc.page {
   width: 183px;
   height: 32px;
   background-image: url(../images/logo_place_header.svg);
-
+  background-repeat: no-repeat;
 }
 
 .logo_place_header {
@@ -278,3 +278,94 @@ align-items: center;
   z-index: 0;
 }
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color:#f2f2f2
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+}
+
+.logo__footer {
+  width: 183px;
+  height: 35px;
+  filter: invert(100%);
+
+}
+
+.footer__author {
+  margin: 18px 0;
+
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.footer__column_content_info {
+
+}
+
+.footer__column-heading {
+
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  margin-top:20px;
+  margin-bottom: 16px;
+}
+
+.footer__column-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-weight: normal;
+  vertical-align: text-top;
+}
+
+.footer__column-links_indent {
+  margin: 10px 0;
+}
+
+.social-icon {
+  margin: 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  padding-right: 26px;
+}
+
+.social-icon_Facebook {
+  background-image: url(/images/facebook_color_white.svg);
+  background-repeat: no-repeat;
+  background-position-y:bottom;
+}
+
+.social-icon_ВКонтакте {
+  background-image: url(/images/vk_color_white.svg);
+  background-repeat: no-repeat;
+  background-position-y:bottom;
+}
+
+.social-icon_Instagram {
+  background-image: url(/images/instagram_color_white.svg);
+  background-repeat: no-repeat;
+  background-position-y:bottom;
+}

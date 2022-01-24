@@ -19,6 +19,7 @@
   margin:0;
   padding:0;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo {
@@ -81,12 +82,17 @@
   line-height: 25px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .description {
   display: flex;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   padding-top: 100px;
-  padding-bottom: 100px;
   justify-content: center;
 }
 
@@ -132,6 +138,7 @@
 }
 
 .digits {
+  padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -147,6 +154,7 @@
   line-height: 1.15em;
   text-align: center;
   z-index: 1;
+  display: block;
 }
 
 .section-subtitle {
@@ -167,6 +175,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   z-index: 1;
+  text-align: center;
 }
 
 .table__cell {
@@ -192,6 +201,7 @@
 
 .feynman {
   min-height: 890px;
+  width: 100%;
   background-image: url(../images/feynman.png);
   background-color: #f2f2f2;
   background-repeat: no-repeat;
@@ -203,6 +213,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .feynman__title {
@@ -246,6 +257,7 @@
 .kaufman {
   padding-top: 90px;
   padding-bottom: 90px;
+  width: 100%;
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
@@ -353,3 +365,78 @@
   background-position-y:bottom;
   vertical-align:-0.1em;
 }
+
+.smooth-opacity:hover {
+  opacity: .5;
+  transition: linear .5s;
+}
+
+.techniques {
+  /* display: flex;
+  margin:0;
+  padding-top: 100px;
+  justify-content: center;
+  flex-direction: column;
+   */
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  text-align: center;
+}
+
+.cards__item {
+  width: 240px;
+  margin-right: 100px;
+}
+
+.cards__item:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  margin:0;
+  line-height: 1.15em;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards__description {
+  margin:0;
+  padding:0;
+  margin-top: 16px;
+  line-height: 23px;
+  font-size: 18px;
+}
+
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
+
+.rotation {
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }

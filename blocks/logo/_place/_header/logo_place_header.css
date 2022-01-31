@@ -1,5 +1,9 @@
 .logo_place_header {
+<<<<<<< HEAD
   background-image: url(../../../../images/logo_place_header.svg);
+=======
+  background-image: url(../../../images/logo_place_header.svg);
+>>>>>>> bd35d97760c3e58392f7d798e391426bf67bc724
   position: absolute;
   top:30px;
   left:64px;
